@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/rixos2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="-3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rixos1" />
+
+    <FrameLayout
+        android:id="@+id/idFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_gravity="center">
+
+        <!--on below line we are creating an image button-->
+        <ImageButton
+            android:id="@+id/idImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/aboutt" />
+
+        <!--on below line we are creating a
+             text for our image button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="About us"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/idFrame2"
+        android:layout_toRightOf="@+id/idFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_gravity="center">
+
+        <!--on below line we are creating an image button-->
+        <ImageButton
+            android:id="@+id/idImgBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/bookk" />
+
+        <!--on below line we are creating a
+             text for our image button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="Book Now"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/idFrame3"
+        android:layout_toRightOf="@+id/idFrame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_gravity="center">
+
+        <!--on below line we are creating an image button-->
+        <ImageButton
+            android:id="@+id/idImgBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/galleryy" />
+
+        <!--on below line we are creating a
+             text for our image button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="Gallery"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/idFrame4"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idFrame3"
+        android:layout_gravity="center">
+
+        <!--on below line we are creating an image button-->
+        <ImageButton
+            android:id="@+id/idImgBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/location" />
+
+        <!--on below line we are creating a
+             text for our image button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/idFrame5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/idFrame4"
+        android:layout_below="@+id/idFrame3"
+        android:layout_gravity="center">
+
+        <!--on below line we are creating an image button-->
+        <ImageButton
+            android:id="@+id/idImgBtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/roomss" />
+
+        <!--on below line we are creating a
+             text for our image button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="Rooms"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/idFrame6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/idFrame5"
+        android:layout_below="@+id/idFrame3"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/idImgBtn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:src="@drawable/diningg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idImgBtn6"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:clickable="true"
+            android:text="Dining"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/idImgBtn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idFrame4"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:src="@drawable/phonee"/>
+    <TextView
+        android:id="@+id/txtcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idFrame4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-17dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/idImgBtn7"
+        android:text="Call Us Now!"
+        android:textColor="#bc9e82"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idFrame4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/txtcall"
+        android:text="©,2023,Rixos Hotels"
+        android:textColor="#bc9e82"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
