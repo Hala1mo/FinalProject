@@ -2,18 +2,35 @@ package com.example.finalproject;
 
 import static android.system.Os.connect;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.app.appsearch.PutDocumentsRequest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.DocumentsContract;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.Manifest;
+
+
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.ktx.Firebase;
+
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,25 +42,35 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton Dining;
     private ImageButton room;
     private ImageButton book;
+    private ImageButton map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         callButton = findViewById(R.id.idImgBtn7);
         gallery=findViewById(R.id.idImgBtn3);
         about=findViewById(R.id.idImgBtn);
         Dining=findViewById(R.id.idImgBtn6);
         room=findViewById(R.id.idImgBtn5);
         book=findViewById(R.id.idImgBtn2);
+        map=findViewById(R.id.idImgBtn4);
 
-        callButton.setOnClickListener(new View.OnClickListener() {
+       /* callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makePhoneCall();
             }
+        });*/
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                map();
+            }
         });
+
+
 
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         Dining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                makeactivityyy();
+                dining();
             }
         });
 
@@ -71,36 +98,33 @@ public class MainActivity extends AppCompatActivity {
                 makeactivityyy();
             }
         });
-        book.setOnClickListener(new View.OnClickListener() {
+       book.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
               make();
             }
+
+
         });
-    }
-
-
-    private void makePhoneCall() {
-        String phoneNumber = "123456789"; // Replace with your desired phone number
-        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL_PHONE);
-        } else {
-            Intent intent = new Intent(Intent.ACTION_CALL);
-            intent.setData(Uri.parse("tel:" + phoneNumber));
-            startActivity(intent);
-        }
     }
     public void makeactivity(){
         Intent intent = new Intent (this,Activity.class);
         startActivity(intent);
     }
+    public void map(){
+        Intent intent = new Intent (this,map.class);
+        startActivity(intent);
+    }
+    public void dining(){
+        Intent intent = new Intent (this,Dining.class);
+        startActivity(intent);
+    }
     public void make(){
-        Intent intent = new Intent (this,Book.class);
+        Intent intent = new Intent (this,Loginn.class);
         startActivity(intent);
     }
     public void makeactivityyy(){
-        Intent intent = new Intent (this,Dining.class);
+        Intent intent = new Intent (this,room.class);
         startActivity(intent);
     }
     public void makeactivityy(){
@@ -108,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @Override
+
+   /* @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_CALL_PHONE) {
@@ -116,9 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 makePhoneCall();
             }
         }
-    }
-
-
+    }*/
 
 
 }

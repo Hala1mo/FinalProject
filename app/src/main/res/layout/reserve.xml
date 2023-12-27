@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/rixos2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rooms and Suits"
+            android:textSize="30sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <CheckBox
+            android:id="@+id/checkbox_superior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Superior Room"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_deluxe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deluxe Room"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Room"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+
+            />
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-in Date"
+            android:textSize="30sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginEnd="40dp" />
+
+        <DatePicker
+            android:layout_marginBottom="20dp"
+            android:id="@+id/datepicker_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp" />
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check-out Date"
+            android:textSize="30sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginEnd="40dp" />
+
+        <DatePicker
+            android:layout_marginBottom="20dp"
+            android:id="@+id/datepicker_checkoutt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp" />
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of people"
+            android:textSize="30sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginEnd="40dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_num_people"
+            android:textSize="30sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/num_people"
+
+            />
+
+        <Button
+            android:id="@+id/btnRes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:onClick="reserve"
+            android:text="Reserve" />
+
+    </LinearLayout>
+
+</ScrollView>

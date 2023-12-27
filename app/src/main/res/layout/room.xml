@@ -22,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rooms and Suits"
+            android:layout_gravity="center"
             android:textSize="35sp"
             android:textColor="#bc9e82"
             android:textStyle="bold"
@@ -34,6 +35,7 @@
             android:textSize="30sp"
             android:textColor="#bc9e82"
             android:textStyle="bold"
+            android:layout_gravity="center"
             android:padding="5dp"/>
 
         <HorizontalScrollView
@@ -62,12 +64,51 @@
 
             </LinearLayout>
         </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 King size bed(s) or 2 separtes"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garden View or On Beach"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member:67,50 $US"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 people"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:padding="5dp"/>
+
+
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Deluxe Room"
+            android:layout_gravity="center"
             android:textSize="30sp"
             android:textColor="#bc9e82"
             android:textStyle="bold"
@@ -104,11 +145,51 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="2 Single bed(s)"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Beach or Sea side or Pool side"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member:117,00 $US"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 people"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Family Room"
+            android:layout_gravity="center"
             android:textSize="30sp"
             android:textColor="#bc9e82"
             android:textStyle="bold"
             android:padding="5dp"/>
+
+
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -137,6 +218,63 @@
             </LinearLayout>
 
         </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 King size bed(s) and 1 Bunk bed(s)"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garden View"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member:91,80 $US"
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 people"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:padding="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="** These prices are for 1adult|1night"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="** Breakfast included"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textColor="#bc9e82"
+            android:textStyle="bold"
+            android:padding="5dp"/>
 
     </LinearLayout>
 </ScrollView>
